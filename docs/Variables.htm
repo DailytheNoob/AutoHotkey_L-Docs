@@ -312,7 +312,9 @@ ContinueSearch := true</pre>
   </tr>
   <tr id="CommandLine">
     <td>1, 2, 3, etc.</td>
-    <td>These variables are automatically created whenever a script is launched with command line parameters. They can be changed and referenced just like normal variable names (for example: %1%), but cannot be referenced directly in an <a href="#Expressions">expression</a>. The variable %0% contains the number of parameters passed (0 if none). For details, see the <a href="Scripts.htm#cmd">command line parameters</a>.</td>
+    <td>These variables are automatically created whenever a script is launched with command line parameters. They can be changed and referenced just like normal variable names (for example: %1%), but cannot be referenced directly in an <a href="#Expressions">expression</a>. The variable %0% contains the number of parameters passed (0 if none). For details, see the <a href="Scripts.htm#cmd">command line parameters</a>.
+    <p class="warning"><strong>Deprecated:</strong> This is not recommended for use in new scripts. Use the A_Args array instead for compatibility with expressions.</p>
+    </td>
   </tr>
   <tr id="Args">
     <td>A_Args<br><span class="ver">[v1.1.27+]</span></td>
